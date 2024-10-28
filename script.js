@@ -16,12 +16,12 @@ Vytvořte webovou stránku,
 - Pomocí interpolace řetězců sestavte výslednou adresu a vypište ji do stránky.
 */
 
-const firstName = prompt("Zadejte prosím vaše křestní jméno (bez diakritiky).").trim()
-const lastName = prompt("Zadejte prosím vaše příjmení bez (diakritiky).").trim()
+const firstName = prompt("Zadejte prosím vaše křestní jméno (bez diakritiky):").trim()
+const lastName = prompt("Zadejte prosím vaše příjmení bez (diakritiky):").trim()
 
 const firstPart = lastName.slice(0, 5).toLowerCase()
 const secondPart = firstName.slice(0, 3).toLowerCase()
 
 const email = `${firstPart}${secondPart}@fit.cvut.cz`
 
-document.body.innerHTML = "<p>vaše automaticky přidělěná e-mailová adrease: " + email + "</p>"
+document.body.innerHTML = "<p>Vaše automaticky přidělěná e-mailová adresa: " + email + "</p>"
